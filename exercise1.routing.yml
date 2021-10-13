@@ -1,0 +1,21 @@
+exercise1.userlist:
+  path: '/exercise1' 
+  defaults: 
+    _controller: '\Drupal\exercise1\Controller\UserlistController::userlistNoFetch' 
+    _title: 'User List'
+  requirements: 
+    _permission: 'access content' 
+exercise1.userlistv2: 
+  path: '/exercise1-with-fetch' 
+  defaults: 
+    _controller: '\Drupal\exercise1\Controller\UserlistController::userlistWithFetch' 
+    _title: 'User List loaded with Fetch()'
+  requirements: 
+    _permission: 'access content' 
+exercise1.fetchuserlist: 
+  path: '/fetch/exercise1' 
+  defaults: 
+    _controller: '\Drupal\exercise1\Controller\UserlistController::fetchUserlist' 
+    _title: 'User List'
+  requirements: 
+    _permission: 'access content' 

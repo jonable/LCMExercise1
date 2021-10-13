@@ -1,0 +1,5 @@
+name: Exercise 1
+type: module
+description: 'Create a table that displays on the homepage displaying table of users that is returned from https://deelay.me/5000/https://jsonplaceholder.typicode.com/users'
+package: Exercises
+core_version_requirement: ^9

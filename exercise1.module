@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ * Exercise1 Module hooks.
+ */
+
+ 
+/**
+ * Implements hook_theme().
+ */
+function exercise1_theme($existing, $type, $theme, $path) {
+  $themes = [
+    'exercise1_userlist' => [
+      'variables' => [
+        'context' => [
+          'timestamp' => NULL,
+          'userlist' => [],
+          ]
+        ]
+      ],
+      'exercise1_fetchuserlist' => [
+        'variables' => [
+          'context' => [
+            'end_point' => NULL,
+          ]
+        ]
+      ]
+  ];
+  return $themes;
+}
