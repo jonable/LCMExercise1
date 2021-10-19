@@ -1,4 +1,4 @@
-<div>    
+<div>
     <table class="table">
         <thead>
             <tr>
@@ -24,8 +24,5 @@
     {% if not context.userlist %}<p>{{ 'No users found.'|t }}</p>{% endif %}
     <p><small>last update {{context.timestamp}}</small></p>
     <div>
-{% if context.link_to_fetch_version %}
-	<a href="{{context.link_to_fetch_version}}">User list with fetch.</a>
-{% endif %}
     </div>
 </div>
